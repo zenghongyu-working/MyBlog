@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.objectFactory"
+		value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+	<package name="myPackage" extends="struts-default">
+		<action name="*_*" method="{2}"
+			class="{1}Action">
+			<result name="success" >${url}</result>
+			<result name="redirectAction" type="redirectAction">${url}</result>
+			<result name="input">${url}</result>
+		</action>
+		
+	</package>
+	<package name="morePackage" extends="struts-default" namespace="/more">
+		<action name="messageBoard_*" method="{1}"
+			class="messageBoardAction">
+			<result name="success" >${url}</result>
+			<result name="input" >/more/more.jsp</result>
+		</action>
+	</package>
+</struts>    

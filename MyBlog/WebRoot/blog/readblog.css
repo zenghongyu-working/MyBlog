@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+
+body,div,ul,ol,li,dl,dt,dd,h2,h3,h4,h5,h6,p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.ds-thread {
+	width: 100%;
+}
+
+body {
+	margin: 0px 150px 0px 150px;
+	background: #FFF;
+}
+
+#top {
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+#top #top_left {
+	float: left;
+	margin: 17px 0 0 0px;
+}
+
+#top #top_left a {
+	display: block;
+	width: 400px;
+	height: 100px;
+	background: url("images/hong.png");
+}
+
+#top #top_right {
+	float: left;
+	width: 649px;
+	margin: 50px 0 0 0;
+}
+
+#top #top_right #top_ul li {
+	font-size: 18px;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+#top #top_right #top_ul .top_li_a {
+	float: left;
+	margin-left: 50px;
+	color: #333;
+	font-weight: normal;
+}
+
+#top #top_right #top_ul .top_li_a:HOVER {
+	color: #ff0000;
+}
+
+#main {
+	margin: 10px 0;
+}
+
+#main #left {
+	width: 770px;
+	height: 800px;
+	float: left;
+	padding-right: 17px;
+	background: url("images/broad.jpg") repeat-y right;
+}
+
+#main #left #article #title {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin: 20px 0 0 0;
+	width: 100%;
+	font-size: 22px;
+	color: #333;
+}
+
+#main #left #article #detail {
+	text-align: center;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	color: #999;
+	border: 1px dashed #ccc;
+	margin-right: 150px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+#main #left #article #detail span {
+	margin: 0 5px;
+	
+}
+
+#main #left #article #content {
+	margin: 20px 0 0 0;
+	
+}
+
+#main #left #article #content span {
+	font-size: 14px;
+	color: #666;
+	line-height: 28px;
+}
+
+#main #right {
+	width: 260px;
+	height: 900px;
+	float: right;
+}
+
+#bottom {
+	
+	height:100px;
+	clear:both;
+	width:100%;
+	float:left;
+}
+
+#bottom .dibu {
+	text-align:center;
+	padding-top:20px;
+	
+}
+
+#bottom .dibu a {
+	
+	margin:0px 20px 0 0;
+	color:#000;
+}
+#bottom .dibu a:hover{
+	color:#3F6;
+}

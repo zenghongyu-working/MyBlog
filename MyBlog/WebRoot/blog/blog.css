@@ -1,0 +1,271 @@
+/* CSS Document */
+body,div,ul,ol,li,dl,dt,dd,h2,h3,h4,h5,h6,p {
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+}
+
+body {
+	margin:0px 150px 0px 150px;
+	background:#FFF;
+}
+
+ul {
+	list-style:none;
+}
+
+img,a img {
+	border:none;
+}
+
+a {
+	text-decoration:none;
+}
+
+#top {
+	background:url(images/top_bg.jpg) repeat-x;
+	height:450px;
+}
+#top #top1 {
+	margin-left:100px;
+	width:100%;
+	height:100px;
+}
+
+#top #top1 #login {
+	float: right;
+	margin-right: 150px;
+}
+
+#top #top1 #login p a {
+	color: #fff;
+	font-size: 15px;
+}
+
+#top #top1 #logo {
+	width:150px;
+	float:left;
+	margin:0px 0px 0px 140px;
+	padding-top:10px;
+}
+
+#top #top1 #logo #img {
+	width:70px;
+	height:70px;
+	cursor: pointer;
+	
+}
+#top #txt {
+	float:left;
+	width:auto;
+	margin-top:25px;
+}
+
+#top #txt #title {
+	color:#FFF;
+	font-size:24px;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#top #nav {
+	height:50px;
+	width:100%;
+	float:left;
+}
+
+#top #nav #nav_ul {
+	float:left;
+	margin-left:220px;
+}
+
+#top #nav #nav_ul .nav_ul_li{
+
+}
+
+#top #nav #nav_ul .ul_a{
+	margin:10px;
+	text-align:center;
+	float:left;
+	color:#000;
+	display:block;
+	width:108px;
+	height:31px;
+	line-height:31px;
+	font-size: 14px;
+}
+
+#top #nav #nav_ul .ul_a:hover {
+	background:url(images/nav_button.gif);
+	color:#CCC;
+	text-decoration:none;
+}
+
+#top #run {
+	width:100%;
+	height:300px;
+	background:url(images/run_bg.jpg);
+	float:left;
+}
+
+#top #run #girl {
+	background:url(images/girl.jpg) no-repeat;
+	width:400px;
+	height:249px;
+	margin:25px 0 0 80px;
+	float:left;
+}
+
+#main {
+	background:url(images/main_top.jpg) repeat-x;
+	width:100%;
+	float:left;
+}
+
+#main #main1 {
+	background:url(images/main_buttom.jpg) 0px repeat-x;
+	background-position:bottom;
+	height:900px;
+	width:100%;
+	float:left;
+}
+
+#main #main1 #main1_left {
+	width:750px;
+	height:100%;
+	float:left;
+	
+}
+
+#main #main1 #main1_right {
+	width:290px;
+	height:100%;
+	float:right;
+}
+
+#main #main1 #main1_left #main1_div1 {
+	float:left;
+	margin:100px 0 0 100px;
+}
+
+#main #main1 #main1_left #main1_div2{
+	height:574px;
+	float:left;
+	clear:both;
+	width:100%;
+	border-right:1px dashed #999999;
+}
+
+#main #main1 #main1_left #main1_div3 {
+	float:left;
+	text-align: center;
+	width: 100%;
+}
+
+#main #main1 #main1_left #main1_div3 a {
+	font-size: 18px;
+	color: #724537;
+	margin: 20px 30px 0 0;
+}
+
+#main #main1 #main1_left #main1_div3 a:hover{
+	color: #DD030B;
+}
+#main #main1 #main1_left #main1_div3 span {
+	font-size: 18px;
+	color: #000000;
+	margin: 20px 30px 0 0;
+}
+
+#main #main1 #main1_left #main1_div2 ul {
+	margin:30px 0 0 100px;
+}
+
+#main #main1 #main1_left #main1_div2 ul li {
+	width:100%;
+	height:auto;
+}
+
+#main #main1 #main1_left #main1_div2 ul li dl dt {
+	font-size:24px;
+	font-weight:normal;
+}
+
+#main #main1 #main1_left #main1_div2 ul li dl dd {
+	text-indent:30px;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#main #main1 #main1_left #main1_div1 h2 {
+	font-weight:normal;
+	font-size:50px;
+}
+
+#main1_right #main1_div3 {
+	margin:100px 0 0 0;
+}
+
+#main1_right #main1_div4 {
+	margin:20px 0 0 0;
+}
+
+#main1_right #main1_div4 ul li {
+	margin:15px 0 0 0;
+	font-size:18px;
+}
+
+#main1_right #main1_div3 h2 {
+	font-weight:normal;
+	font-size:40px;
+}
+
+#bottom {
+	background:url(images/buttom.jpg) repeat-x;
+	height:100px;
+	clear:both;
+	width:100%;
+	float:left;
+}
+
+#bottom .dibu {
+	text-align:center;
+	padding-top:20px;
+	
+}
+
+#bottom .dibu a {
+	
+	margin:0px 20px 0 0;
+	color:#000;
+}
+#bottom .dibu a:hover{
+	color:#3F6;
+}
+
+label {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px; 
+}
+
+.textInput {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.buttonInput {
+	background-color: #7D7DFF;
+	cursor: pointer;
+	font-size: 17px;
+	border: none;
+}
+
+.buttonInput:hover {
+	background-color: #FFDC35;
+	
+}
+#returnLoginButton {
+	margin-left: 80px;
+}
+

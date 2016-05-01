@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+body {
+	margin:0px 150px 0px 150px;
+	background: url(images/register_bg.jpg) no-repeat;
+	
+}
+
+#top {
+	margin-top:150px;
+	width: 100%;
+	height: 100px;
+}
+
+#top span {
+	width:100px;
+	font-size: 50px;
+	color: #FAFAD2;
+	margin-left: 350px;
+}
+
+#main {
+	width: 100%;
+}
+
+form {
+	margin-left: 350px;
+}
+
+label {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px; 
+}
+
+.textInput {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.buttonInput {
+	background-color: #7D7DFF;
+	cursor: pointer;
+}
+
+.buttonInput:hover {
+	background-color: #FFDC35;
+	
+}
+#returnLoginButton {
+	margin-left: 53px;
+}
+
