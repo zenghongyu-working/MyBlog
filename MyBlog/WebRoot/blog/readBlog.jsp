@@ -12,7 +12,8 @@
 <head>
 <!-- <base href="<%=basePath%>">-->
 
-<title><s:property value="#blog.title" /></title>
+<title><s:property value="#blog.title" />
+</title>
 <link rel="icon" href="redfish.png">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -32,12 +33,17 @@
 		</div>
 		<div id="top_right">
 			<ul id="top_ul">
-				<a href="http://localhost:8080/MyBlog/index/index_index.action" class="top_li_a"><li>首页</li> </a>
-				<a href="http://localhost:8080/MyBlog/about/about.jsp" class="top_li_a"><li>关于我</li> </a>
+				<a href="http://localhost:8080/MyBlog/index/index_index.action"
+					class="top_li_a"><li>首页</li> </a>
+				<a href="http://localhost:8080/MyBlog/about/about.jsp"
+					class="top_li_a"><li>关于我</li> </a>
 				<a href="#" class="top_li_a"><li>技术分享</li> </a>
 				<a href="#" class="top_li_a"><li>慢生活</li> </a>
-				<a href="http://localhost:8080/MyBlog/time/time_index.action" class="top_li_a"><li>时间轴</li> </a>
-				<a href="http://localhost:8080/MyBlog/more/messageBoard_index.action" class="top_li_a"><li>留言板</li> </a>
+				<a href="http://localhost:8080/MyBlog/time/time_index.action"
+					class="top_li_a"><li>时间轴</li> </a>
+				<a
+					href="http://localhost:8080/MyBlog/more/messageBoard_index.action"
+					class="top_li_a"><li>留言板</li> </a>
 			</ul>
 		</div>
 	</div>
@@ -56,7 +62,6 @@
 					<span> <s:property value="#blog.content" /> </span>
 				</div>
 			</div>
-
 			<!-- 多说评论框 start -->
 			<div class="ds-thread"
 				data-thread-key="<s:property value="#blog.id" />"
@@ -64,7 +69,14 @@
 				data-url="http://localhost:8080/MyBlog/blog/blog_readBlog?id=<s:property value="#blog.id" />"></div>
 			<!-- 多说评论框 end -->
 		</div>
-		<div id="right">右半部</div>
+		<div id="right">
+			<div id="right1">
+				<span>热评文章</span>
+				<!-- 多说热评文章 start -->
+				<div class="ds-top-threads" data-range="daily" data-num-items="5"></div>
+				<!-- 多说热评文章 end -->
+			</div>
+		</div>
 	</div>
 
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->

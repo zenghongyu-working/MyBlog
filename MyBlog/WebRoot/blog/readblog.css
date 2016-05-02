@@ -120,8 +120,28 @@ body {
 	float: right;
 }
 
+#main #right #right1 {
+	padding-left: 10px;
+}
+
+#main #right #right1 span {
+	margin-bottom: 10px;
+	display: block;
+	color: #ff0000;
+	background: url("images/line.jpg") no-repeat right;
+}
+
+#main #right .ds-top-threads li{
+	font-size: 14px;
+	line-height:30px;
+	border-bottom: 1px dashed #999;
+}
+
+#main #right .ds-top-threads li a {
+	color: #555;
+}
+
 #bottom {
-	
 	height:100px;
 	clear:both;
 	width:100%;
