@@ -20,48 +20,62 @@ public class MyDaoSupportImpl<T> extends HibernateDaoSupport implements
 
 	@Override
 	public T getById(String id) {
-		return this.getHibernateTemplate().get(getClz(), Integer.valueOf(id));
+		if (id != null && !"".equals(id))
+			return this.getHibernateTemplate().get(getClz(),
+					Integer.valueOf(id));
+		return null;
 	}
 
 	@Override
-	public void add(T t) {
-		this.getHibernateTemplate().save(t);
+	public void add(T t)  {
+		if (t != null)
+			this.getHibernateTemplate().save(t);
 	}
 
 	@Override
-	public void delete(T t) {
-		this.getHibernateTemplate().delete(t);
+	public void delete(T t){
+		if (t != null)
+			this.getHibernateTemplate().delete(t);
 	}
 
 	@Override
 	public void deleteById(String id) {
-		T t = getById(id);
-		this.getHibernateTemplate().delete(t);
+		if (id != null && !"".equals(id)) {
+			T t = getById(id);
+			if (t != null)
+				this.getHibernateTemplate().delete(t);
+		}
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<T> findByHql(String hql, Object[] args) {
-		return this.getHibernateTemplate().find(hql, args);
+		if (hql != null && !"".equals(hql) && args != null)
+			return this.getHibernateTemplate().find(hql, args);
+		return null;
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Object> findObjectByHql(String hql, Object[] args) {
-		return this.getHibernateTemplate().find(hql, args);
+		if (hql != null && !"".equals(hql) && args != null)
+			return this.getHibernateTemplate().find(hql, args);
+		return null;
 	}
 
 	@Override
 	public void update(T t) {
-		this.getHibernateTemplate().update(t);
-	}
-	
-	@SuppressWarnings("unchecked")
-	public long getTotalCount(String hql){
-		List <Long> list = this.getHibernateTemplate().find(hql);
-		return list.get(0);
+		if (t != null)
+			this.getHibernateTemplate().update(t);
 	}
 
-	
-	
+	@SuppressWarnings("unchecked")
+	public long getTotalCount(String hql) {
+		List<Long> list = null;
+		if (hql != null && !"".equals(hql))
+			list = this.getHibernateTemplate().find(hql);
+		if (list != null && list.get(0) != null)
+			return list.get(0);
+		return 0;
+	}
 }

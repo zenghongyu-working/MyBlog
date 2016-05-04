@@ -31,6 +31,16 @@ public class BlogDaoImpl extends BaseDaoImpl<Blog> implements BlogDao {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Blog> findPage(final int begin, final int count) {
+		final int newBegin;
+		final int newCount;
+		if (begin > 0)
+			newBegin = begin;
+		else
+			newBegin = 0;
+		if (count > 0)
+			newCount = count;
+		else
+			newCount = 0;
 		final String hql = "from Blog";
 		return this.getHibernateTemplate().executeFind(
 				new HibernateCallback<List<Blog>>() {
@@ -39,8 +49,8 @@ public class BlogDaoImpl extends BaseDaoImpl<Blog> implements BlogDao {
 					public List<Blog> doInHibernate(Session arg0)
 							throws HibernateException, SQLException {
 						Query query = arg0.createQuery(hql);
-						query.setFirstResult(begin);
-						query.setMaxResults(count);
+						query.setFirstResult(newBegin);
+						query.setMaxResults(newCount);
 						return query.list();
 					}
 				});

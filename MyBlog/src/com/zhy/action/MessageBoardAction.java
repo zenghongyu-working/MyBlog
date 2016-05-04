@@ -2,13 +2,13 @@ package com.zhy.action;
 
 public interface MessageBoardAction {
 	/**
-	 * ×î¿ªÊ¼Ò³Ãæ
+	 * è®¿é—®é¦–é¡µ
 	 * @return
 	 */
 	public String index();
 	
 	/**
-	 * ±£´æÁôÑÔ°åĞÅÏ¢
+	 * ä¿å­˜ç”¨æˆ·å‘æ¥çš„æ¶ˆæ¯
 	 * @return
 	 */
 	public String saveInput();

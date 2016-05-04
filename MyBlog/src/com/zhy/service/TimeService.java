@@ -6,7 +6,7 @@ import com.zhy.model.Time;
 
 public interface TimeService {
 	/**
-	 * 返回Time中的全部数据
+	 * 杩斿洖鎵�鏈夌殑Time璁板綍
 	 * @return
 	 */
 	public List<Time> find();
