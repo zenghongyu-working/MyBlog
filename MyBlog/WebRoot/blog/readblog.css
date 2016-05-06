@@ -69,7 +69,7 @@ body {
 
 #main #left {
 	width: 770px;
-	height: 800px;
+	height: auto;
 	float: left;
 	padding-right: 17px;
 	background: url("images/broad.jpg") repeat-y right;
@@ -112,6 +112,7 @@ body {
 	font-size: 14px;
 	color: #666;
 	line-height: 28px;
+	text-indent: 2em;
 }
 
 #main #right {

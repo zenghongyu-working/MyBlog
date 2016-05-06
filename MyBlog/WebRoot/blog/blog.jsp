@@ -44,17 +44,18 @@
 	<h2 class="icon icon-stack">红鱼</h2>
 	<ul>
 		<li><a class="icon icon-data"
-			href="http://localhost:8080/MyBlog/index/index_index.action">首页</a>
-		</li>
+			href="http://localhost:8080/MyBlog/index/index_index.action">首页</a></li>
 		<li><a class="icon icon-location"
-			href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a></li>
+			href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a>
+		</li>
 		<li><a class="icon icon-study"
-			href="http://localhost:8080/MyBlog/time/time_index.action">时间轴</a>
+			href="http://localhost:8080/MyBlog/time/time_index.action">时间轴</a></li>
+		<li><a class="icon icon-photo"
+			href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a>
 		</li>
 		<li><a class="icon icon-photo"
-			href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a></li>
-		<li><a class="icon icon-photo"
-			href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a></li>
+			href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a>
+		</li>
 		<li><a class="icon icon-wallet"
 			href="http://localhost:8080/MyBlog/more/messageBoard_index.action">More</a>
 		</li>
@@ -69,8 +70,8 @@
 			<label>密码:</label>
 			<input type="password" name="password" class="textInput" size="25" />
 			<input type="submit" value="提交" class="buttonInput" />
-			<input type="button" value="注册" class="buttonInput" id="returnLoginButton"
-				onclick="registerInput();" />
+			<input type="button" value="注册" class="buttonInput"
+				id="returnLoginButton" onclick="registerInput();" />
 			<!-- <s:textfield name="username" label="用户名"></s:textfield>
 			<s:password name="password" label="密码"></s:password>
 			<s:submit value="登录"></s:submit>
@@ -190,8 +191,7 @@
 				</div>
 				<div id="main1_div4">
 					<ul>
-						<li><img src="images/me.jpg" />
-						</li>
+						<li><img src="images/me.jpg" /></li>
 						<li>姓名：曾宏余</li>
 						<li>年龄：21岁</li>
 						<li>邮箱：zhy_working@163.com</li>
@@ -199,7 +199,8 @@
 						<li><a href="https://github.com/zenghongyu-working"><img
 								src="images/github.jpg" width="100px" height="100px" /> </a> <a
 							href="http://weibo.com/2462087407/profile?topnav=1&wvr=6&is_all=1"><img
-								src="images/weibo.jpg" width="100px" height="100px" /> </a></li>
+								src="images/weibo.jpg" width="100px" height="100px" /> </a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -210,7 +211,10 @@
 			<a href="http://localhost:8080/MyBlog/index/index_index.action">首页</a>
 			<a href="#">联系我们</a> <a href="#">加入我们</a>
 		</p>
-		<p class="dibu">Copyright © 2016--2016 Powered By RED FISH</p>
+		<p class="dibu">
+			Copyright © 2016--2016 Powered By RED FISH <a
+				href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16017268号-1</a>
+		</p>
 	</div>
 	<%
 		if (request.getParameter("loginError") != null) {

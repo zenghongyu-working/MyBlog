@@ -167,14 +167,17 @@ center a:hover {
 						href="http://localhost:8080/MyBlog/index/index_index.action">首页</a>
 					</li>
 					<li><a class="icon icon-location"
-						href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a></li>
+						href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a>
+					</li>
 					<li><a class="icon icon-study"
 						href="http://localhost:8080/MyBlog/time/time_index.action">时间轴</a>
 					</li>
 					<li><a class="icon icon-photo"
-						href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a></li>
+						href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a>
+					</li>
 					<li><a class="icon icon-photo"
-						href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a></li>
+						href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a>
+					</li>
 					<li><a class="icon icon-wallet"
 						href="http://localhost:8080/MyBlog/more/messageBoard_index.action">More</a>
 					</li>
@@ -187,8 +190,8 @@ center a:hover {
 				<div class="st-content-inner">
 					<!-- extra div for emulating position:fixed of the menu -->
 					<p class="text1">红鱼</p>
-					<p class="text2" style="font-size:24px">Think it , more than&nbsp;
-						what you do</p>
+					<p class="text2" style="font-size:24px">Think it , more
+						than&nbsp; what you do</p>
 					<hr />
 					<p class="text1" style="font-size:24px">聊聊生活</p>
 					<p id="st-trigger-effects" align="center">
@@ -208,8 +211,7 @@ center a:hover {
 									<h3>
 										<s:date name="#time.date" format="yyyy.MM  " />
 										<s:property value="#time.detail" />
-									</h3> </a>
-							</li>
+									</h3> </a></li>
 						</s:iterator>
 						<!--           <li><a href="http://www.behance.net/gallery/13285315/Quarterly-Musashino-winter-of-2013-issue"><img src="/static/img/img-photo/13.jpg" alt="img13"><h3>Quarterly Musashino winter of 2013 issue</h3></a></li>
           <li><a href="http://www.behance.net/gallery/16541811/MAINICHI-CHUUGOKUGO-May-2014"><img src="/static/img/img-photo/14.jpg" alt="img14"><h3>MAINICHI CHUUGOKUGO April 2014</h3></a></li> -->
@@ -254,8 +256,10 @@ center a:hover {
 	<hr>
 	<p align="center" style="font-size:14px;color:#FFFFFF;">RedFish DO
 		WHAT YOU WANT</p>
-	<p align="center" style="font-size:14px;color:#FFFFFF;">红鱼™
-		Copyright © 2016--2016 Powered By TREES</p>
+	<p align="center" style="font-size:14px;color:#FFFFFF;">
+		红鱼™ Copyright © 2016--2016 Powered By TREES <a
+			href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16017268号-1</a>
+	</p>
 	</copyright>
 </body>
 </html>

@@ -12,8 +12,7 @@
 <head>
 <!-- <base href="<%=basePath%>">-->
 
-<title><s:property value="#blog.title" />
-</title>
+<title><s:property value="#blog.title" /></title>
 <link rel="icon" href="redfish.png">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -59,7 +58,7 @@
 						href="http://localhost:8080/MyBlog/about/about.jsp">曾宏余</a> </span>
 				</div>
 				<div id="content">
-					<span> <s:property value="#blog.content" /> </span>
+					<span> <s:property value="#blog.content" escape="false" /> </span>
 				</div>
 			</div>
 			<!-- 多说评论框 start -->
@@ -102,7 +101,10 @@
 			<a href="http://localhost:8080/MyBlog/index/index_index.action">首页</a>
 			<a href="#">联系我们</a> <a href="#">加入我们</a>
 		</p>
-		<p class="dibu">Copyright © 2016--2016 Powered By RED FISH</p>
+		<p class="dibu">
+			Copyright © 2016--2016 Powered By RED FISH <a
+				href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16017268号-1</a>
+		</p>
 	</div>
 </body>
 </html>

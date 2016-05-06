@@ -191,14 +191,17 @@ center a:hover {
 					href="http://localhost:8080/MyBlog/index/index_index.action">首页</a>
 				</li>
 				<li><a class="icon icon-location"
-					href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a></li>
+					href="http://localhost:8080/MyBlog/about/about.jsp">关于我</a>
+				</li>
 				<li><a class="icon icon-study"
 					href="http://localhost:8080/MyBlog/time/time_index.action">时间轴</a>
 				</li>
 				<li><a class="icon icon-photo"
-					href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a></li>
+					href="http://localhost:8080/MyBlog/forum/forum.html">论坛</a>
+				</li>
 				<li><a class="icon icon-photo"
-					href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a></li>
+					href="http://localhost:8080/MyBlog/blog/blog_index.action">博客</a>
+				</li>
 				<li><a class="icon icon-wallet"
 					href="http://localhost:8080/MyBlog/more/messageBoard_index.action">More</a>
 				</li>
@@ -252,8 +255,10 @@ center a:hover {
 	<hr>
 	<p align="center" style="font-size:14px;color:#FFFFFF;">RedFish DO
 		WHAT YOU WANT</p>
-	<p align="center" style="font-size:14px;color:#FFFFFF;">红鱼™
-		Copyright © 2016--2016 Powered By TREES</p>
+	<p align="center" style="font-size:14px;color:#FFFFFF;">
+		红鱼™ Copyright © 2016--2016 Powered By TREES <a
+			href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16017268号-1</a>
+	</p>
 	</copyright>
 </body>
 </html>

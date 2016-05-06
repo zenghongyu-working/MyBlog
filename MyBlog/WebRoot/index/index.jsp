@@ -201,7 +201,9 @@ center a:hover {
 	<p align="center" style="font-size:14px;color:#FFFFFF;">RedFish DO
 		WHAT YOU WANT</p>
 	<p align="center" style="font-size:14px;color:#FFFFFF;">红鱼™
-		Copyright © 2016--2016 Powered By TREES</p>
+		Copyright © 2016--2016 Powered By TREES
+		<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备16017268号-1</a>
+	</p>
 	</copyright>
 
 </body>
