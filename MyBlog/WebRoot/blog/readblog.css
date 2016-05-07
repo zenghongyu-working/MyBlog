@@ -21,6 +21,7 @@ ul {
 body {
 	margin: 0px 150px 0px 150px;
 	background: #FFF;
+	font: 12px "宋体",Arial,Helvetica,sans-serif;
 }
 
 #top {
@@ -113,6 +114,33 @@ body {
 	color: #666;
 	line-height: 28px;
 	text-indent: 2em;
+}
+
+#main #left #article #content span img {
+	display: block;
+	margin-left: 20px;
+}
+
+#main #left #article #keyword {
+	background: url("images/keyword.png") no-repeat #f8f8f8 10px center;
+	border: 1px solid #f0f0f0;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px 0;
+	padding-left: 40px;
+	
+}
+
+#main #left #article #keyword p{
+	font-size: 12px;
+}
+
+#main #left #article #keyword #front {
+	color: #099;
+}
+
+#main #left #article #keyword #laster {
+	color: #756f71;
 }
 
 #main #right {

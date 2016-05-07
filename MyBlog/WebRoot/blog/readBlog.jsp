@@ -12,7 +12,8 @@
 <head>
 <!-- <base href="<%=basePath%>">-->
 
-<title><s:property value="#blog.title" /></title>
+<title><s:property value="#blog.title" />
+</title>
 <link rel="icon" href="redfish.png">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
@@ -58,7 +59,14 @@
 						href="http://localhost:8080/MyBlog/about/about.jsp">曾宏余</a> </span>
 				</div>
 				<div id="content">
-					<span> <s:property value="#blog.content" escape="false" /> </span>
+					<span> <s:property value="#blog.content" escape="false" />
+					</span>
+				</div>
+				<div id="keyword">
+					<p>
+						<span id="front">关键字:</span>
+						<span id="laster"><s:property value="#blog.classification"/></span>
+					</p>
 				</div>
 			</div>
 			<!-- 多说评论框 start -->
