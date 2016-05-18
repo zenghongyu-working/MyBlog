@@ -1,35 +1,36 @@
 /* CSS Document */
 body,div,ul,ol,li,dl,dt,dd,h2,h3,h4,h5,h6,p {
-	margin:0px;
-	padding:0px;
-	font-size:14px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
 }
 
 body {
-	margin:0px 150px 0px 150px;
-	background:#FFF;
+	margin: 0px 150px 0px 150px;
+	background: #FFF;
 }
 
 ul {
-	list-style:none;
+	list-style: none;
 }
 
 img,a img {
-	border:none;
+	border: none;
 }
 
 a {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 #top {
-	background:url(images/top_bg.jpg) repeat-x;
-	height:450px;
+	background: url(images/top_bg.jpg) repeat-x;
+	height: 450px;
 }
+
 #top #top1 {
-	margin-left:100px;
-	width:100%;
-	height:100px;
+	margin-left: 100px;
+	width: 100%;
+	height: 100px;
 }
 
 #top #top1 #login {
@@ -43,121 +44,175 @@ a {
 }
 
 #top #top1 #logo {
-	width:150px;
-	float:left;
-	margin:0px 0px 0px 140px;
-	padding-top:10px;
+	width: 150px;
+	float: left;
+	margin: 0px 0px 0px 140px;
+	padding-top: 10px;
 }
 
 #top #top1 #logo #img {
-	width:70px;
-	height:70px;
+	width: 70px;
+	height: 70px;
 	cursor: pointer;
-	
 }
+
 #top #txt {
-	float:left;
-	width:auto;
-	margin-top:25px;
+	float: left;
+	width: auto;
+	margin-top: 25px;
 }
 
 #top #txt #title {
-	color:#FFF;
-	font-size:24px;
-	text-align:center;
-	font-family:Verdana, Geneva, sans-serif;
+	color: #FFF;
+	font-size: 24px;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 #top #nav {
-	height:50px;
-	width:100%;
-	float:left;
+	height: 50px;
+	width: 100%;
+	float: left;
 }
 
 #top #nav #nav_ul {
-	float:left;
-	margin-left:220px;
+	float: left;
+	margin-left: 220px;
 }
 
-#top #nav #nav_ul .nav_ul_li{
-
+#top #nav #nav_ul .nav_ul_li {
+	
 }
 
-#top #nav #nav_ul .ul_a{
-	margin:10px;
-	text-align:center;
-	float:left;
-	color:#000;
-	display:block;
-	width:108px;
-	height:31px;
-	line-height:31px;
+#top #nav #nav_ul .ul_a {
+	margin: 10px;
+	text-align: center;
+	float: left;
+	color: #000;
+	display: block;
+	width: 108px;
+	height: 31px;
+	line-height: 31px;
 	font-size: 14px;
 }
 
 #top #nav #nav_ul .ul_a:hover {
-	background:url(images/nav_button.gif);
-	color:#CCC;
-	text-decoration:none;
+	background: url(images/nav_button.gif);
+	color: #CCC;
+	text-decoration: none;
 }
 
 #top #run {
-	width:100%;
-	height:300px;
-	background:url(images/run_bg.jpg);
-	float:left;
+	width: 100%;
+	height: 300px;
+	background: url(images/run_bg.jpg);
+	float: left;
 }
 
 #top #run #girl {
-	background:url(images/girl.jpg) no-repeat;
-	width:400px;
-	height:249px;
-	margin:25px 0 0 80px;
-	float:left;
+	background: url(images/girl.jpg) no-repeat;
+	width: 400px;
+	height: 249px;
+	margin: 25px 0 0 80px;
+	float: left;
 }
 
 #main {
-	background:url(images/main_top.jpg) repeat-x;
-	width:100%;
-	float:left;
+	background: url(images/main_top.jpg) repeat-x;
+	width: 100%;
+	float: left;
 }
 
 #main #main1 {
-	background:url(images/main_buttom.jpg) 0px repeat-x;
-	background-position:bottom;
-	height:900px;
-	width:100%;
-	float:left;
+	background: url(images/main_buttom.jpg) 0px repeat-x;
+	background-position: bottom;
+	height: 1000px;
+	width: 100%;
+	float: left;
 }
 
 #main #main1 #main1_left {
-	width:750px;
-	height:100%;
-	float:left;
-	
+	width: 750px;
+	height: 100%;
+	float: left;
 }
 
 #main #main1 #main1_right {
-	width:290px;
-	height:100%;
-	float:right;
+	width: 290px;
+	height: 100%;
+	float: right;
 }
 
 #main #main1 #main1_left #main1_div1 {
-	float:left;
-	margin:100px 0 0 100px;
+	float: left;
+	margin: 100px 0 0 100px;
 }
 
-#main #main1 #main1_left #main1_div2{
-	height:574px;
-	float:left;
-	clear:both;
-	width:100%;
-	border-right:1px dashed #999999;
+#main #main1 #main1_left #main1_div2 {
+	height: 674px;
+	float: left;
+	clear: both;
+	width: 100%;
+	border-right: 1px dashed #999999;
+}
+
+#main #main1 #main1_left #main1_div2 #line {
+	width: 97%;
+	border-bottom: 1px dashed #ccc;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content {
+	clear: both;
+	height: 200px;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content #title_h2 {
+	margin: 20px 0 10px 0;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content #title_h2 a {
+	color: #333;
+	font-size: 16px;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content p span {
+	margin: 0 10px 0 0;
+	color: #756f71;
+	font: 12px "ËÎÌו", Arial, Helvetica, sans-serif;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content img {
+	width: 170px;
+	margin: 5px;
+	border: 1px solid #eae6e7;
+	display: block;
+	float: left;
+	padding: 2px;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content #summary {
+	width: 565px;
+	height: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.9;
+	color: #756f71;
+}
+
+#main #main1 #main1_left #main1_div2 .blog_content #summary a {
+	background: #f90 none repeat scroll 0 0;
+	color: #fff;
+	float: right;
+	margin: 20px 5px;
+	width: 80px;
+	height: 32px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 32px;
 }
 
 #main #main1 #main1_left #main1_div3 {
-	float:left;
+	float: left;
 	text-align: center;
 	width: 100%;
 }
@@ -165,12 +220,13 @@ a {
 #main #main1 #main1_left #main1_div3 a {
 	font-size: 18px;
 	color: #724537;
-	margin: 20px 30px 0 0;
+	margin: 220px 30px 0 0;
 }
 
-#main #main1 #main1_left #main1_div3 a:hover{
+#main #main1 #main1_left #main1_div3 a:hover {
 	color: #DD030B;
 }
+
 #main #main1 #main1_left #main1_div3 span {
 	font-size: 18px;
 	color: #000000;
@@ -178,75 +234,74 @@ a {
 }
 
 #main #main1 #main1_left #main1_div2 ul {
-	margin:30px 0 0 100px;
+	margin: 30px 0 0 100px;
 }
 
 #main #main1 #main1_left #main1_div2 ul li {
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: auto;
 }
 
 #main #main1 #main1_left #main1_div2 ul li dl dt {
-	font-size:24px;
-	font-weight:normal;
+	font-size: 24px;
+	font-weight: normal;
 }
 
 #main #main1 #main1_left #main1_div2 ul li dl dd {
-	text-indent:30px;
-	font-size:14px;
-	font-weight:normal;
+	text-indent: 30px;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 #main #main1 #main1_left #main1_div1 h2 {
-	font-weight:normal;
-	font-size:50px;
+	font-weight: normal;
+	font-size: 50px;
 }
 
 #main1_right #main1_div3 {
-	margin:100px 0 0 0;
+	margin: 100px 0 0 0;
 }
 
 #main1_right #main1_div4 {
-	margin:20px 0 0 0;
+	margin: 20px 0 0 0;
 }
 
 #main1_right #main1_div4 ul li {
-	margin:15px 0 0 0;
-	font-size:18px;
+	margin: 15px 0 0 0;
+	font-size: 18px;
 }
 
 #main1_right #main1_div3 h2 {
-	font-weight:normal;
-	font-size:40px;
+	font-weight: normal;
+	font-size: 40px;
 }
 
 #bottom {
-	background:url(images/buttom.jpg) repeat-x;
-	height:100px;
-	clear:both;
-	width:100%;
-	float:left;
+	background: url(images/buttom.jpg) repeat-x;
+	height: 100px;
+	clear: both;
+	width: 100%;
+	float: left;
 }
 
 #bottom .dibu {
-	text-align:center;
-	padding-top:20px;
-	
+	text-align: center;
+	padding-top: 20px;
 }
 
 #bottom .dibu a {
-	
-	margin:0px 20px 0 0;
-	color:#000;
+	margin: 0px 20px 0 0;
+	color: #000;
 }
-#bottom .dibu a:hover{
-	color:#3F6;
+
+#bottom .dibu a:hover {
+	color: #3F6;
 }
 
 label {
 	font-size: 20px;
 	display: block;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 }
 
 .textInput {
@@ -263,9 +318,8 @@ label {
 
 .buttonInput:hover {
 	background-color: #FFDC35;
-	
 }
+
 #returnLoginButton {
 	margin-left: 80px;
 }
-

@@ -129,30 +129,32 @@
 					<s:iterator value="#session.myPage.list" var="blog">
 
 						<div class="blog_content">
-							<img alt="头像" src="me.jpg" width="45" height="45"
-								style="margin: 10px;">
-							<dl>
-								<dt style="font-size: 35px">
-									标题： <a style="" id="title" name="title"
-										href="blog_readBlog?id=<s:property value="#blog.id" escapeHtml="false" />"><s:property
-											value="#blog.title" escapeHtml="false" /> </a>
-								</dt>
-								<dd>
-									<div style="text-indent: 10px; margin: 10px;">
-										<p>
-											时间：
-											<s:date name="#blog.date" format="yyyy-MM-dd" />
-										</p>
-									</div>
-									<div style="text-indent: 10px; margin: 10px;">
-										<p>
-											标签：
-											<s:property value="#blog.classification" />
-										</p>
-									</div>
-								</dd>
-							</dl>
+							<h2 id="title_h2">
+								<a id="title" name="title"
+									href="blog_readBlog?id=<s:property value="#blog.id" escapeHtml="false" />"><s:property
+										value="#blog.title" escapeHtml="false" /> </a>
+							</h2>
+							<p>
+								<span>发布时间：<s:date name="#blog.date" format="yyyy-MM-dd" />
+								</span> <span>[<s:property value="#blog.classification" />]</span>
+							</p>
+							<div>
+								<a href="blog_readBlog?id=<s:property value="#blog.id" />"><img
+									alt="封面图"
+									src="./coverPic/<s:property
+										value="#blog.title" escapeHtml="false" /> .jpg">
+								</a>
+								<div id="summary">
+									<ul style="margin: 0;">
+										<li><s:property value="#blog.content.substring(0,70)"
+												escapeHtml="false" />
+										<li><a
+											href="blog_readBlog?id=<s:property value="#blog.id"/>">详细信息>></a>
+									</ul>
+								</div>
+							</div>
 						</div>
+						<div id="line"></div>
 					</s:iterator>
 				</div>
 				<div id="main1_div3">
