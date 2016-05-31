@@ -17,6 +17,7 @@
 <link href="./animate.css" rel="stylesheet">
 <script src="./lettering.js"></script>
 <script src="./textillate.js"></script>
+<script src="./snow.js"></script>
 
 <link rel="icon" href="./redfish.png">
 <link rel="stylesheet" type="text/css" href="./normalize.css" />
@@ -145,7 +146,7 @@ center a:hover {
 
 </head>
 
-<body>
+<body id='id_body'>
 
 	<div class="container">
 		<div id="st-container" class="st-container">
@@ -262,4 +263,8 @@ center a:hover {
 	</p>
 	</copyright>
 </body>
+<script type="text/javascript">
+add_div();
+snow();
+</script>
 </html>
