@@ -11,13 +11,14 @@ import com.zhy.service.MessageBoardService;
 import com.zhy.util.ActionUtil;
 
 public class MessageBoardActionImpl extends ActionSupport implements
-		MessageBoardAction{
+		MessageBoardAction {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private String uniqueId;
+
 	public String getUniqueId() {
 		return uniqueId;
 	}
@@ -55,14 +56,15 @@ public class MessageBoardActionImpl extends ActionSupport implements
 
 	@Override
 	public String saveInput() {
-		System.out.println(uniqueId
-				+ " " + ActionContext.getContext().getSession().get("uniqueIdTime"));
-		if (!uniqueId.equals(ActionContext.getContext().getSession().get("uniqueIdTime"))){
+		System.out.println(uniqueId + " "
+				+ ActionContext.getContext().getSession().get("uniqueIdTime"));
+		if (!uniqueId.equals(ActionContext.getContext().getSession()
+				.get("uniqueIdTime"))) {
 			ActionContext.getContext().getSession().put("isRepeat", "yes");
-		}else{
+		} else {
 			MessageBoard messageBoard = new MessageBoard(textArea, new Date());
 			messageBoardService.add(messageBoard);
-			ActionContext.getContext().getApplication().put("isSave", "yse");
+			ActionContext.getContext().getApplication().put("isSave", "yes");
 		}
 		ActionContext.getContext().getSession().remove("uniqueIdTime");
 		ActionContext.getContext().put("url", "/more/more.jsp");

@@ -1,7 +1,15 @@
 package com.zhy.action;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.apache.struts2.interceptor.ServletResponseAware;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -11,7 +19,7 @@ import com.zhy.service.UserService;
 import com.zhy.util.ActionUtil;
 
 public class UserActionImpl extends ActionSupport implements UserAction,
-		ModelDriven<User> {
+		ServletRequestAware, ServletResponseAware, ModelDriven<User> {
 
 	/**
 	 * 
@@ -19,6 +27,9 @@ public class UserActionImpl extends ActionSupport implements UserAction,
 	private static final long serialVersionUID = 1L;
 	private UserService userService;
 	private User user;
+	private HttpServletResponse response;
+	private HttpServletRequest request;
+	
 
 	public User getUser() {
 		return user;
@@ -95,6 +106,40 @@ public class UserActionImpl extends ActionSupport implements UserAction,
 	public String registerInput() {
 		ActionContext.getContext().put("url", "register.jsp");
 		return ActionUtil.SUCCESS;
+	}
+
+	@Override
+	public String checkUsername() {
+		PrintWriter writer = null;
+		try {
+			String json = "{\"success\":true,\"msg\":";
+			response.setCharacterEncoding("utf-8");
+			writer = response.getWriter();
+			String username = request.getParameter("username");
+			if (userService.isUniqueUser(new User(username, ""))){
+				json += "\"该用户名可以使用\"";
+			}else{
+				json += "\"该用户名已被占用\"";
+			}
+			json += "}";
+			writer.print(json);
+			writer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			writer.close();
+		}
+		return null;
+	}
+
+	@Override
+	public void setServletResponse(HttpServletResponse response) {
+		this.response = response;
+	}
+
+	@Override
+	public void setServletRequest(HttpServletRequest request) {
+		this.request = request;
 	}
 
 }

@@ -24,4 +24,9 @@ public interface UserAction {
 	 * @return
 	 */
 	public String registerInput();
+	
+	/**
+	 * 检查用户名是否存在
+	 */
+	public String checkUsername();
 }

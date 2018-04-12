@@ -20,6 +20,36 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 <link rel="stylesheet" type="text/css" href="register.css">
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#username").blur(function() {
+			$.get("user_checkUsername.action?username=" + $("#username").val(), function(data) {
+				if (data.success) {
+					$("#result").html(data.msg);
+				} else {
+					$("#result").html("发生错误：" + data.msg);
+				}
+			}, "json");
+
+			/*$.ajax({
+				type:"POST",
+				url:"user_checkUsername",
+				dataType:"json",
+				success:function(data){
+					if (data.success){
+						$("#result").html(data.msg);
+					}else{
+						$("#result").html("发生错误：" + data.msg);
+					}
+				},
+				error:function(jqXHR){
+					alert("发生错误：" + jqXHR.status);
+				}
+			});*/
+		});
+	});
+</script>
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
@@ -39,7 +69,8 @@
 		<s:form action="user_add">
 		${param.registerError }
 		<label>用户名:</label>
-			<input type="text" name="username" class="textInput" size="25" />
+			<span id="result"></span>
+			<input type="text" name="username" id="username" class="textInput" size="25" />
 			<label>密码:</label>
 			<input type="password" name="password" class="textInput" size="25" />
 			<input type="submit" value="提交" class="buttonInput" />
